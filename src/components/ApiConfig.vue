@@ -331,7 +331,7 @@ const configType = ref('official') // 'official' 或 'custom'
 // 官方默认配置
 const officialForm = reactive({
   apiKey: '',
-  baseURL: 'https://ai.91hub.vip/v1',
+  baseURL: 'https://new-api.ai/v1',
   selectedModel: 'claude-4-sonnet',
   maxTokens: 2000000,
   unlimitedTokens: false,
@@ -419,7 +419,7 @@ const formatTemperature = (value) => {
 
 // 打开购买链接
 const openPurchaseLink = () => {
-  window.open('https://item.taobao.com/item.htm?ft=t&id=938261705242', '_blank')
+  window.open('https://new-api.ai/pricing', '_blank')
 }
 
 // 配置类型切换
@@ -447,7 +447,7 @@ const saveOfficialConfig = async () => {
   }
   
   // 确保官方配置始终使用正确的API地址
-  officialForm.baseURL = 'https://ai.91hub.vip/v1'
+  officialForm.baseURL = 'https://new-api.ai/v1'
   
   validating.value = true
   try {
@@ -476,7 +476,7 @@ const testOfficialConnection = async () => {
   }
   
   // 确保官方配置始终使用正确的API地址
-  officialForm.baseURL = 'https://ai.91hub.vip/v1'
+  officialForm.baseURL = 'https://new-api.ai/v1'
   
   validating.value = true
   try {
@@ -651,7 +651,7 @@ const loadSavedConfig = () => {
         officialForm.temperature = config.temperature
       }
       // 强制保持官方API地址，不允许被覆盖
-      officialForm.baseURL = 'https://ai.91hub.vip/v1'
+      officialForm.baseURL = 'https://new-api.ai/v1'
     } catch (error) {
       console.error('加载官方配置失败:', error)
     }

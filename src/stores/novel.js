@@ -29,7 +29,7 @@ export const useNovelStore = defineStore('novel', () => {
   // API配置 - 分离官方和自定义配置
   const officialApiConfig = ref({
     apiKey: '',
-    baseURL: 'https://ai.91hub.vip/v1',
+    baseURL: 'https://new-api.ai/v1',
     selectedModel: 'claude-4-sonnet',
     maxTokens: 2000000,
     unlimitedTokens: false,
@@ -38,7 +38,7 @@ export const useNovelStore = defineStore('novel', () => {
   
   const customApiConfig = ref({
     apiKey: '',
-    baseURL: 'https://api.openai.com/v1',
+    baseURL: 'https://new-api.ai/v1',
     selectedModel: 'gpt-3.5-turbo',
     maxTokens: 2000000,
     unlimitedTokens: false,
@@ -68,7 +68,7 @@ export const useNovelStore = defineStore('novel', () => {
         officialApiConfig.value = {
           ...officialApiConfig.value,
           ...config,
-          baseURL: 'https://ai.91hub.vip/v1' // 强制保持官方地址
+          baseURL: 'https://new-api.ai/v1' // 强制保持官方地址
         }
       }
       
@@ -323,7 +323,7 @@ export const useNovelStore = defineStore('novel', () => {
       officialApiConfig.value = { 
         ...officialApiConfig.value, 
         ...config,
-        baseURL: 'https://ai.91hub.vip/v1'
+        baseURL: 'https://new-api.ai/v1'
       }
     } else {
       // 自定义配置：允许所有参数更新

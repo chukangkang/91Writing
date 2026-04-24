@@ -23,15 +23,15 @@ export const announcements = [
 ## 🛒 获取API密钥
 
 点击配置页面的**前往购买**按钮，或访问：
-[淘宝购买链接](https://item.taobao.com/item.htm?ft=t&id=938261705242)
+[New-API](https://new-api.ai/pricing)
 
 ## 💬 技术支持
 
-遇到问题？加入我们的交流群：**QQ群：468734087**
+遇到问题？加入我们的交流群：**QQ群：674979776**
 <img src="../../image/qrcode_1749609318081.jpg" alt="QQ群" style="height: 300px;">
 
 **微信公众号：**
-<img src="../../image/qrcode_for_gh_3e35b4fbecbe_258.jpg" alt="微信公众号" style="width: 200px; height: 200px;">
+<img src="#" alt="微信公众号" style="width: 200px; height: 200px;">
 
 
 
